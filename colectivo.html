@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="es-CL" data-seccion="1">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#111111">
+    <meta name="description" content="Historia del colectivo y archivo de afiches, bandas y tocatas por ciudad y año.">
+    <title>Tocatas — Basura Moderna</title>
+    <link rel="icon" href="assets/marcas/icono.png">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/cartelera.js" defer></script>
+    <script src="js/contenido.js" defer></script>
+    <script src="js/portal.js" defer></script>
+    <script src="js/archivo.js" defer></script>
+  </head>
+  <body class="pagina-colectivo">
+    <a class="saltar" href="#principal">Saltar al contenido</a>
+    <div class="cabecera-identidad"><div class="ancho cabecera-interior">COLECTIVO ARTÍSTICO BASURA MODERNA</div></div>
+    <section class="cab-seccion">
+      <video class="video-fondo" muted playsinline loop preload="metadata" src="assets/videos/estatica-fina.webm" aria-hidden="true"></video>
+      <div class="ancho interior-cab">
+        <div>
+          <p class="rotulo"><span class="estrella" aria-hidden="true"></span> Tocatas</p>
+          <h1 class="titulo-marca"><img src="assets/marcas/bm-letras-blanco.webp" alt="Basura Moderna"></h1>
+          <p>Partimos armando tocatas en la región de Valparaíso. Entre La Calera, Quilpué y las ciudades vecinas conocemos de cerca lo que cuesta llegar a otro público cuando una banda ensaya lejos de Santiago.</p>
+          
+        </div>
+        <div class="sello-bm" aria-hidden="true"><img src="assets/marcas/bm-blanco.webp" alt=""></div>
+      </div>
+    </section>
+    <header class="franja-localidades">
+      <nav class="localidades" aria-label="Principal">
+        <a href="index.html"><span aria-hidden="true" class="nav-icon ">⌂</span>Inicio</a>
+        <i aria-hidden="true"></i>
+        <a href="colectivo.html" aria-current="page"><span aria-hidden="true" class="nav-icon icono-boleto"></span>Tocatas</a>
+        <i aria-hidden="true"></i>
+        <a href="waren-fm.html"><span aria-hidden="true" class="nav-icon icono-ondas"></span>Radio</a>
+        <i aria-hidden="true"></i>
+        <a href="editorial-laucha.html"><span aria-hidden="true" class="nav-icon ">▤</span>Editorial</a>
+      </nav>
+    </header>
+    <main id="principal">
+      <section id="archivo" class="ancho seccion archivo">
+        <div class="titular">
+          <h2>Archivo de tocatas<span>.</span></h2>
+          <div class="linea-rayas" aria-hidden="true"></div>
+        </div>
+        <p class="intro-archivo">Cada afiche abre una fecha. Entra para ver quiénes tocaron, dónde fue y qué quedó en el archivo.</p>
+        <form class="filtros" id="filtros" role="search" aria-label="Filtrar las tocatas">
+          <label>Buscar banda o tocata<input type="search" name="consulta" placeholder="Ej. Légamo" autocomplete="off"></label>
+          <label>Ciudad<select name="ciudad">
+              <option value="">Todas las ciudades</option>
+            </select></label>
+          <label>Año<select name="anio">
+              <option value="">Todos los años</option>
+            </select></label>
+          <button class="enlace-linea" type="reset">Limpiar filtros</button>
+        </form>
+        <p id="cuenta-archivo" class="cuenta" role="status"></p>
+        <div id="muro-archivo" class="muro"></div>
+      </section>
+    </main>
+    <nav class="laterales" aria-label="Recorrer secciones">
+      <a class="anterior" href="index.html"><b aria-hidden="true">←</b><span>Ir a Inicio</span></a>
+      <a class="siguiente" href="waren-fm.html"><b aria-hidden="true">→</b><span>Ir a Radio</span></a>
+    </nav>
+    <footer class="pie">
+      <div class="ancho pie-interior">
+        <a href="index.html" class="pie-marca">
+          <img src="assets/marcas/bm-letras-blanco.webp" alt="Basura Moderna" width="138" height="42">
+        </a>
+        <p>Autogestión desde 2023<br>Región de Valparaíso, Chile</p>
+      </div>
+    </footer>
+  </body>
+</html>

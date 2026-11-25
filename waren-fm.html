@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="es-CL" data-seccion="2">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#111111">
+    <meta name="description" content="Programas a pedido, una cortina de prueba y músicos en rotación desde la región de Valparaíso.">
+    <title>Warén FM — Basura Moderna</title>
+    <link rel="icon" href="assets/marcas/icono.png">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/cartelera.js" defer></script>
+    <script src="js/contenido.js" defer></script>
+    <script src="js/portal.js" defer></script>
+    <script src="js/radio.js" defer></script>
+  </head>
+  <body class="pagina-radio">
+    <a class="saltar" href="#principal">Saltar al contenido</a>
+    <div class="cabecera-identidad"><div class="ancho cabecera-interior">COLECTIVO ARTÍSTICO BASURA MODERNA</div></div>
+    <section class="cab-seccion radio-cab">
+      <video class="video-fondo" muted playsinline loop preload="metadata" src="assets/videos/estatica-fina.webm" aria-hidden="true"></video>
+      <div class="ancho interior-cab">
+        <div>
+          <p class="rotulo"><span class="estrella" aria-hidden="true"></span> Radio digital</p>
+          <h1 class="titulo-marca">
+            <img src="assets/marcas/waren-letras-blanco.webp" alt="Warén FM">
+          </h1>
+          <p>Una radio imaginada desde la región de Valparaíso. Juntamos música de la escena, locuciones y cortes entre pistas en forma de programas para escuchar a pedido.</p>
+          
+        </div>
+        <div class="grabado-radio" aria-hidden="true">
+          <img src="assets/marcas/waren-negro.webp" alt="">
+        </div>
+      </div>
+    </section>
+    <header class="franja-localidades">
+      <nav class="localidades" aria-label="Principal">
+        <a href="index.html"><span aria-hidden="true" class="nav-icon ">⌂</span>Inicio</a>
+        <i aria-hidden="true"></i>
+        <a href="colectivo.html"><span aria-hidden="true" class="nav-icon icono-boleto"></span>Tocatas</a>
+        <i aria-hidden="true"></i>
+        <a href="waren-fm.html" aria-current="page"><span aria-hidden="true" class="nav-icon icono-ondas"></span>Radio</a>
+        <i aria-hidden="true"></i>
+        <a href="editorial-laucha.html"><span aria-hidden="true" class="nav-icon ">▤</span>Editorial</a>
+      </nav>
+    </header>
+    <main id="principal">
+      <section class="ancho seccion" id="reproductor">
+        <div class="titular">
+          <h2>En la frecuencia<span>.</span></h2>
+          <div class="linea-rayas" aria-hidden="true"></div>
+        </div>
+        <div class="equipo" id="radio-equipo"></div>
+      </section>
+      <section class="ancho seccion">
+        <div class="titular">
+          <h2>En rotación<span>.</span></h2>
+          <div class="linea-rayas" aria-hidden="true"></div>
+        </div>
+        <p class="intro-archivo">Músicos que han pasado por nuestros carteles. Escúchalos en sus propios canales.</p>
+        <div class="rotaciones" id="rotaciones"></div>
+      </section>
+      <section class="ancho seccion">
+        <div class="titular">
+          <h2>Videoteca<span>.</span></h2>
+          <div class="linea-rayas" aria-hidden="true"></div>
+        </div>
+        <div id="videoteca"></div>
+      </section>
+    </main>
+    <nav class="laterales" aria-label="Recorrer secciones">
+      <a class="anterior" href="colectivo.html"><b aria-hidden="true">←</b><span>Ir a Tocatas</span></a>
+      <a class="siguiente" href="editorial-laucha.html"><b aria-hidden="true">→</b><span>Ir a Editorial</span></a>
+    </nav>
+    <footer class="pie">
+      <div class="ancho pie-interior">
+        <a href="index.html" class="pie-marca">
+          <img src="assets/marcas/bm-letras-blanco.webp" alt="Basura Moderna" width="138" height="42">
+        </a>
+        <p>Autogestión desde 2023<br>Región de Valparaíso, Chile</p>
+      </div>
+    </footer>
+  </body>
+</html>

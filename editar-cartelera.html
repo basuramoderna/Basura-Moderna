@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es-CL">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex,nofollow">
+    <title>Editar cartelera — Basura Moderna</title>
+    <link rel="icon" href="assets/marcas/icono.png">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/cartelera.js" defer></script>
+    <script src="js/contenido.js" defer></script>
+    <script src="js/editar-cartelera.js" defer></script>
+  </head>
+  <body>
+    <main class="editor-guia">
+      <a class="enlace-linea" href="index.html">Volver al portal</a>
+      <h1>Editar cartelera<span>.</span></h1>
+      <p>Elige una tocata o agrega una fecha. Al terminar, descarga el archivo y reemplaza <code>js/cartelera.js</code> en la carpeta del proyecto. La portada se actualiza cuando vuelves a abrirla.</p>
+      <label class="limite-cartelera">Máximo de eventos en portada (1–5)<input form="evento" id="limite" type="number" min="1" max="5" required></label>
+      <div class="selector-fecha">
+        <label>Tocata a editar<select id="elegir"></select></label>
+      </div>
+      <form id="evento">
+        <label class="todo">Nombre de la tocata<input name="titulo" required></label>
+        <label>Fecha<input type="date" name="fecha" required></label>
+        <label>Hora de Chile<input type="time" name="hora"></label>
+        <label>Ciudad<input name="ciudad" required></label>
+        <label>Sala o recinto<input name="sala" required></label>
+        <label class="todo">Dirección<input name="direccion"></label>
+        <label class="todo">Bandas, una por línea<textarea name="bandas" rows="4"></textarea></label>
+        <label class="todo">Enlace externo de entradas<input name="entrada" type="url" pattern="https?://.+" placeholder="https://"></label>
+        <label class="todo">Información de entrada, edades o valores<textarea name="aviso" rows="2"></textarea></label>
+        <label class="todo">Ruta del afiche, si lo tienes<input name="afiche" placeholder="assets/afiches/mi-tocata.webp"></label>
+        <label class="todo">Crédito del afiche<input name="credito"></label>
+        <label class="todo">Nota de la fecha<textarea name="nota" rows="3"></textarea></label>
+        <label class="todo control-visible"><input type="checkbox" name="visibleCartelera" checked> Incluir entre las fechas de la cartelera</label>
+        <label class="todo">Miniatura del afiche (opcional)<input name="mini" placeholder="assets/afiches/mi-fecha-mini.webp"></label>
+        <label class="todo">Descripción visual del afiche<input name="alt"></label>
+        <label class="todo">Crónica de la fecha<textarea name="cronica" rows="3"></textarea></label>
+        <label class="todo">Redes del afichista. Una por línea, en formato nombre | enlace<textarea name="redes" rows="2"></textarea></label>
+        <label class="todo">Fotos. Una por línea, en formato ruta | autor | descripción<textarea name="fotos" rows="4" placeholder='assets/fotos/fecha.webp | NOMBRE "ALIAS" APELLIDO | La banda en el escenario'></textarea></label>
+        <div class="acciones todo">
+          <button class="boton rojo" type="submit">Descargar cartelera.js</button>
+        </div>
+        <output class="todo" id="estado" role="status"></output>
+      </form>
+    </main>
+  </body>
+</html>
